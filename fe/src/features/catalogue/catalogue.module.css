@@ -1,0 +1,29 @@
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.search-bar {
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 1px solid;
+}
+.title {
+    padding: 5px;
+}
+.image {
+}
+

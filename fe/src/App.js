@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Counter } from './features/counter/Counter';
+import Catalogue from './features/catalogue/catalogue'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-hana
-
+        <Catalogue/>
     </div>
   );
 }
