@@ -9,6 +9,9 @@ return <div className={styles.item}>
             <div className={styles.title}>
                 {title}
             </div>
+            <div className={styles.image}>
+                <img src={ image}/>
+            </div>
         </div>
 };
 export default Item;
