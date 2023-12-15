@@ -20,10 +20,11 @@
     flex-direction: column;
     margin: 1rem;
     border: 1px solid #B1B1B1;
-    max-width: 12rem;
+    width: 12rem;
     max-height: 18rem;
     cursor: pointer;
     line-clamp: 2;
+    padding: 0.5rem;
 }
 .item:hover {
     transform: translate(10px,-10px);
