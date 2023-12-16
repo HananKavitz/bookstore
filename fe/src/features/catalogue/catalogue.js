@@ -12,10 +12,10 @@ const Catalogue = ({}) => {
 const [books, setBooks] = useState([]);
 const [chosenBook, setChosenBook] = useState(null);
 const [pageSize, setPageSize] = useState(50);
-
+const [query, setQuery] = useState('');
 useEffect(() => {
 
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber&maxResults=${pageSize===50? 40: pageSize}&startIndex=0`)
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber${query ? '+' + query: ''}&maxResults=${pageSize===50? 40: pageSize}&startIndex=0`)
         .then(res => {
             setBooks(res.data.items);
         })
@@ -34,11 +34,11 @@ useEffect(() => {
             });
         }
 
-},[pageSize]);
+},[pageSize, query]);
 
   return (
     <div className={styles.main}>
-        <SearchBar callback={(value) => console.log(value)}/>
+        <SearchBar callback={(value) => setQuery(value)}/>
         <div className={styles.grid}>
 
             {books.map(item => <div onClick={()=> setChosenBook(item)}>
