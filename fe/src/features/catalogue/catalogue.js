@@ -7,6 +7,7 @@ import Item from './item'
 import PurchaseForm from '../purchase/purchaseForm';
 import PageSize from './pageSize';
 import SearchBar from '../searchbar/searchBar';
+import EmptyPage from '../emptyPage/emptyPage';
 const Catalogue = ({}) => {
 
 const [books, setBooks] = useState([]);
@@ -39,16 +40,19 @@ useEffect(() => {
   return (
     <div className={styles.main}>
         <SearchBar callback={(value) => setQuery(value)}/>
-        <div className={styles.grid}>
+        {books.length === 0 ?
+            <EmptyPage /> :
+            <div className={styles.grid}>
 
-            {books.map(item => <div onClick={()=> setChosenBook(item)}>
-                                    <Item
-                                        title={item.volumeInfo.title}
-                                        image={item.volumeInfo.imageLinks?.smallThumbnail}
-                                     />
-                                </div>)
-            }
-        </div>
+                {books.map(item => <div onClick={()=> setChosenBook(item)}>
+                                        <Item
+                                            title={item.volumeInfo.title}
+                                            image={item.volumeInfo.imageLinks?.smallThumbnail}
+                                         />
+                                    </div>)
+                }
+            </div>
+        }
 
         <PageSize setPageSize={setPageSize} />
 
