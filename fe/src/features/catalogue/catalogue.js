@@ -6,7 +6,7 @@ import styles from './catalogue.module.css';
 import Item from './item'
 import PurchaseForm from '../purchase/purchaseForm';
 import PageSize from './pageSize';
-
+import SearchBar from '../searchbar/searchBar';
 const Catalogue = ({}) => {
 
 const [books, setBooks] = useState([]);
@@ -38,6 +38,7 @@ useEffect(() => {
 
   return (
     <div className={styles.main}>
+        <SearchBar callback={(value) => console.log(value)}/>
         <div className={styles.grid}>
 
             {books.map(item => <div onClick={()=> setChosenBook(item)}>
