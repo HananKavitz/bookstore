@@ -20,7 +20,12 @@ const SearchBar = ({ callback }) => {
         1000
       );
     return <div className={styles.main}>
-            <Search placeholder="Cyber book" onSearch={onSearch} enterButton onChange={(evt) => debouncedOnchange(evt.target.value)}/>
+            <Search
+                placeholder="Cyber books"
+                 onSearch={onSearch}
+                 enterButton
+                 onChange={(evt) => debouncedOnchange(evt.target.value)}
+             />
            </div>
 };
 export default SearchBar;
