@@ -23,7 +23,7 @@ useEffect(() => {
             console.error(err);
         });
         if (pageSize === 50){
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber&maxResults=10&startIndex=40`)
+            axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber${query ? '+' + query: ''}&maxResults=10&startIndex=40`)
             .then(res => {
                 const allBooks = [...books, ...res.data.items];
                 console.log(allBooks.length, pageSize);
