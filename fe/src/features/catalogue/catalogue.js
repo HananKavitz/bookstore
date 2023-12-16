@@ -9,33 +9,32 @@ import PageSize from './pageSize';
 import SearchBar from '../searchbar/searchBar';
 import EmptyPage from '../emptyPage/emptyPage';
 const Catalogue = ({}) => {
-
+const api = 'https://www.googleapis.com/books/v1/volumes';
 const [books, setBooks] = useState([]);
 const [chosenBook, setChosenBook] = useState(null);
 const [pageSize, setPageSize] = useState(50);
 const [query, setQuery] = useState('');
 useEffect(() => {
 
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber${query ? '+' + query: ''}&maxResults=${pageSize===50? 40: pageSize}&startIndex=0`)
-        .then(res => {
-            setBooks(res.data.items);
+        axios.get(`${api}?q=cyber${query ? '+' + query : ''}&maxResults=${pageSize===50? 40 : pageSize}&startIndex=0`)
+        .then(res1 => {
+            setBooks(res1.data.items);
+             if (pageSize === 50) {
+                axios.get(`${api}?q=cyber${query ? '+' + query : ''}&maxResults=10&startIndex=40`)
+                .then(res2 => {
+                    const allBooks = [...res1.data.items, ...res2.data.items];
+                    setBooks(allBooks);
+                })
+                .catch(err2 => {
+                    console.error(err2);
+                });
+            }
         })
         .catch(err => {
             console.error(err);
         });
-        if (pageSize === 50){
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber${query ? '+' + query: ''}&maxResults=10&startIndex=40`)
-            .then(res => {
-                const allBooks = [...books, ...res.data.items];
-                console.log(allBooks.length, pageSize);
-                setBooks(allBooks);
-            })
-            .catch(err => {
-                console.error(err);
-            });
-        }
 
-},[pageSize, query]);
+}, [pageSize, query]);
 
   return (
     <div className={styles.main}>
