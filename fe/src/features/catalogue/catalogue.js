@@ -15,16 +15,27 @@ const [pageSize, setPageSize] = useState(50);
 
 useEffect(() => {
 
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber&maxResults=${pageSize}&startIndex=0`).
-        then(res => {
-        setBooks(res.data.items);
-        }).
-        catch(err => {
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber&maxResults=${pageSize===50? 40: pageSize}&startIndex=0`)
+        .then(res => {
+            setBooks(res.data.items);
+        })
+        .catch(err => {
             console.error(err);
         });
+        if (pageSize === 50){
+            axios.get(`https://www.googleapis.com/books/v1/volumes?q=cyber&maxResults=10&startIndex=40`)
+            .then(res => {
+                const allBooks = [...books, ...res.data.items];
+                console.log(allBooks.length, pageSize);
+                setBooks(allBooks);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        }
 
 },[pageSize]);
-    console.log(pageSize);
+
   return (
     <div className={styles.main}>
         <div className={styles.grid}>
