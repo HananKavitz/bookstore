@@ -1,8 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import { Modal } from 'antd';
 import styles from './purchaseForm.module.css';
-import Modal from 'react-modal';
+
 
 const PurchaseForm = ({item,children, closeForm, onSubmit}) => {
      const {
@@ -18,23 +18,22 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(-100%, 0)',
   },
 };
 
 return  <Modal
-            onRequestClose={closeForm}
-            isOpen={item}
+            onCancel={closeForm}
+            open={!!item}
             className={styles.modal}
             styles={customStyles}
-            contentLabel="Example Modal"
-
+            title="Purchase"
+            footer={null}
         >
             <form onSubmit={handleSubmit((data) => onSubmit(data))}>
                 <div className={styles.main}>
                    <h2>{item.volumeInfo.title}</h2>
                    <input {...register('name', { required: true })} className={styles.item} placeholder={'Name'}/>
-
                    <input {...register('phone', { required: true })} className={styles.item}  placeholder={'Phone'}/>
                    <input {...register('email', { required: true })} className={styles.item}  placeholder={'Email'}/>
                    <input {...register('address', { required: true })} className={styles.item}  placeholder={'Address'}/>
