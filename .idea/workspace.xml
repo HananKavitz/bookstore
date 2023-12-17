@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d56636e-e12a-465c-b572-0b9036628030" name="Changes" comment="RUN dir">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/app/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/catalogue/catalogue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/catalogue/catalogue.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/catalogue/item.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/catalogue/pageSize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/counter/Counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/counter/Counter.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/counter/counterAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/counter/counterSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/counter/counterSlice.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/emptyPage/emptyPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/emptyPage/emptyPage.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/purchase/purchaseForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/purchase/purchaseForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/searchbar/searchBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/features/searchbar/searchBar.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Za2PfU4uLYesqDuQoCehrFPWB2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/97255/PycharmProjects/bookstore"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\97255\PycharmProjects\bookstore\fe\src\features\emptyPage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\97255\PycharmProjects\bookstore" />
+      <recent name="C:\Users\97255\PycharmProjects\bookstore\fe" />
+      <recent name="C:\Users\97255\PycharmProjects\bookstore\fe\src\features" />
+      <recent name="C:\Users\97255\PycharmProjects\bookstore\fe\src\features\counter\catalogue" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d56636e-e12a-465c-b572-0b9036628030" name="Changes" comment="" />
+      <created>1702645846887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702645846887</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1702645945445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702645945445</updated>
+    </task>
+    <task id="LOCAL-00002" summary="react app created">
+      <created>1702647196029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702647196029</updated>
+    </task>
+    <task id="LOCAL-00003" summary="catalogue added">
+      <created>1702650300905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702650300905</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added image to item">
+      <created>1702661217208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702661217208</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added modal purchasing window">
+      <created>1702665724840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702665724840</updated>
+    </task>
+    <task id="LOCAL-00006" summary="no. of pages">
+      <created>1702667910828</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702667910829</updated>
+    </task>
+    <task id="LOCAL-00007" summary="no. of pages">
+      <created>1702715628866</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702715628866</updated>
+    </task>
+    <task id="LOCAL-00008" summary="antd modal">
+      <created>1702716911374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702716911374</updated>
+    </task>
+    <task id="LOCAL-00009" summary="basic search and debounce">
+      <created>1702718741832</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702718741832</updated>
+    </task>
+    <task id="LOCAL-00010" summary="search works">
+      <created>1702718963821</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702718963821</updated>
+    </task>
+    <task id="LOCAL-00011" summary="search works">
+      <created>1702718982353</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702718982353</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Dockerfile added">
+      <created>1702720758067</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702720758067</updated>
+    </task>
+    <task id="LOCAL-00013" summary="emptyPage added">
+      <created>1702721343587</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702721343587</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix num of items per page">
+      <created>1702722436687</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702722436687</updated>
+    </task>
+    <task id="LOCAL-00015" summary="RUN dir">
+      <created>1702829545656</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702829545656</updated>
+    </task>
+    <task id="LOCAL-00016" summary="RUN dir">
+      <created>1702829738011</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702829738011</updated>
+    </task>
+    <task id="LOCAL-00017" summary="RUN dir">
+      <created>1702829862646</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702829862646</updated>
+    </task>
+    <task id="LOCAL-00018" summary="RUN dir">
+      <created>1702830018809</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830018809</updated>
+    </task>
+    <task id="LOCAL-00019" summary="RUN dir">
+      <created>1702830242701</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830242701</updated>
+    </task>
+    <task id="LOCAL-00020" summary="RUN dir">
+      <created>1702830537471</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830537472</updated>
+    </task>
+    <task id="LOCAL-00021" summary="RUN dir">
+      <created>1702830670493</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830670493</updated>
+    </task>
+    <task id="LOCAL-00022" summary="RUN dir">
+      <created>1702830887880</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830887880</updated>
+    </task>
+    <task id="LOCAL-00023" summary="RUN dir">
+      <created>1702831158543</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702831158543</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="react app created" />
+    <MESSAGE value="catalogue added" />
+    <MESSAGE value="added image to item" />
+    <MESSAGE value="added modal purchasing window" />
+    <MESSAGE value="no. of pages" />
+    <MESSAGE value="antd modal" />
+    <MESSAGE value="basic search and debounce" />
+    <MESSAGE value="search works" />
+    <MESSAGE value="Dockerfile added" />
+    <MESSAGE value="emptyPage added" />
+    <MESSAGE value="fix num of items per page" />
+    <MESSAGE value="RUN dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="RUN dir" />
+  </component>
+</project>
