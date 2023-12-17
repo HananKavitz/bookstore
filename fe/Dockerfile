@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the entire application code to the container
-COPY .. ./fe
+COPY .. .
 RUN dir
 # Build the React app for production
 RUN npm run build
