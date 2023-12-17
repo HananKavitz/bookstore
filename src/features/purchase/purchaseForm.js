@@ -1,8 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Modal } from 'antd';
-import styles from './purchaseForm.module.css';
 
+import styles from './purchaseForm.module.css';
+import { Modal, Form, Input, Button } from 'antd';
 
 const PurchaseForm = ({item,children, closeForm, onSubmit}) => {
      const {
@@ -30,16 +30,67 @@ return  <Modal
             title="Purchase"
             footer={null}
         >
-            <form onSubmit={handleSubmit((data) => onSubmit(data))}>
+            <Form onFinish={(data) => onSubmit(data)}>
                 <div className={styles.main}>
                    <h2>{item.volumeInfo.title}</h2>
-                   <input {...register('name', { required: true })} className={styles.item} placeholder={'Name'}/>
-                   <input {...register('phone', { required: true })} className={styles.item}  placeholder={'Phone'}/>
-                   <input {...register('email', { required: true })} className={styles.item}  placeholder={'Email'}/>
-                   <input {...register('address', { required: true })} className={styles.item}  placeholder={'Address'}/>
-                   <input type="submit" />
+                   <Form.Item
+                      label="Name"
+                      name="username"
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please input your username!',
+                        },
+                      ]}
+                    >
+                  <Input placeholder='Hanan Kavitz'/>
+                </Form.Item>
+                <Form.Item
+                      label="Phone"
+                      name="phone"
+
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Phone is required',
+                        },
+                      ]}
+                    >
+                  <Input placeholder='+972' />
+                </Form.Item>
+                <Form.Item
+                      label="Email"
+                      name="email"
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please input your email!',
+                          type: 'email'
+                        },
+                      ]}
+                    >
+                  <Input placeholder='hananke0@gmail.com'/>
+                </Form.Item>
+                <Form.Item
+                      label="Address"
+                      name="address"
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please input your address!',
+                        },
+                      ]}
+                    >
+                  <Input />
+                </Form.Item>
+                <Form.Item
+                              >
+                  <Button type="primary" htmlType="submit">
+                    Submit
+                  </Button>
+                </Form.Item>
                </div>
-            </form>
+            </Form>
 
 
         </Modal>

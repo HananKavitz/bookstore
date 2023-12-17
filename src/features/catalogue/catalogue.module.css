@@ -25,6 +25,8 @@
     cursor: pointer;
     line-clamp: 2;
     padding: 0.5rem;
+    box-shadow: 4px 4px 4px lightgrey;
+    border-radius: 3px;
 }
 .item:hover {
     transform: translate(10px,-10px);
